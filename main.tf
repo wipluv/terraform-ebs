@@ -10,5 +10,4 @@ resource "aws_launch_configuration" "default" {
 data "template_file" "default" {
   template = "${file("script/user-data.sh")}"
 }
-
-#:s/terraform-springboot-helloapp/terraform-ebs/g
+:s/terraform-springboot-helloapp/terraform-ebs/g
